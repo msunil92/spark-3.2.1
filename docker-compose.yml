@@ -1,0 +1,8 @@
+version: '2'
+services:
+  local-spark:
+    build: .
+    image: local-spark
+    container_name: local-spark
+    volumes:
+      - ${PWD}/scripts:/code/
